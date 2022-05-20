@@ -6,8 +6,8 @@ import { getData } from "../../utils/util-index";
 
 export const Hero = () => {
   const { dataState, dataDispatch } = useDataContext();
-  const navigate = useNavigate();
   const categoryData = dataState.categories;
+  const navigate = useNavigate();
 
   useEffect(() => {
     getData("get", "/api/categories", dataDispatch);
