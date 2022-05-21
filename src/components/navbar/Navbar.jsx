@@ -1,11 +1,11 @@
 import React from "react";
-import { FaUserCircle } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
 import {
+  FaUserCircle,
+  GiHamburgerMenu,
   HiLightBulb,
   HiOutlineLightBulb,
   HiOutlineLogout,
-} from "react-icons/hi";
+} from "../../services/icons";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
