@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Navbar } from "../components/index-component";
-import { Hero, Quiz, Rules } from "../pages/pages-index";
+import { Hero, Quiz } from "../pages/pages-index";
 import { ScrollToTop } from "../services/ScrollToTop";
 
 function RoutePage() {
@@ -16,6 +16,11 @@ function RoutePage() {
         {/* {loading ? ( */}
         <Routes>
           <Route exact path="/" element={<Hero />} />
+          <Route
+            exact
+            path="/category/:categoryNumber/question/:questionNumber"
+            element={<Quiz />}
+          />
         </Routes>
         {/* ) : ( */}
         {/* <div className="flex items-center h-screen capitalize justify-center text-3xl font-semibold">

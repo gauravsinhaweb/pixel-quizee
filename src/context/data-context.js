@@ -5,6 +5,7 @@ const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
+  const [questionCount, setQuestionCount] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
   const [checkedAnswer, setCheckedAnswer] = useState([]);
 
@@ -23,6 +24,8 @@ const DataProvider = ({ children }) => {
     setIsOpen,
     checkedAnswer,
     setCheckedAnswer,
+    questionCount,
+    setQuestionCount,
   };
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
 };

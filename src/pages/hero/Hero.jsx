@@ -5,18 +5,18 @@ import { useDataContext } from "../../context";
 import { getData } from "../../utils/util-index";
 
 export const Hero = () => {
-  const { dataState, dataDispatch } = useDataContext();
+  const { dataState, dataDispatch, questionCount } = useDataContext();
   const categoryData = dataState.categories;
   const navigate = useNavigate();
 
   useEffect(() => {
     getData("get", "/api/categories", dataDispatch);
   }, []);
+
   const categoryCardHandler = (rules, categoryNumber, questions) => {
     dataDispatch({ type: "SET_RULE", payload: rules });
     dataDispatch({ type: "SET_QUESTIONS", payload: questions });
-
-    navigate(`/category/${categoryNumber}/question/1`);
+    navigate(`/category/${categoryNumber}/question/${questionCount}`);
   };
 
   return (
