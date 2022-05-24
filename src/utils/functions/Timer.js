@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { useDataContext } from "../../context";
 
 export function Timer() {
-  const { isOpen } = useDataContext();
+  const { isOpenModal } = useDataContext();
   const [time, setTime] = useState({
-    minute: "15",
-    second: "59",
+    minute: 14,
+    second: 59,
   });
 
   let countDownDate = new Date().getTime() + 15 * 60 * 1000;
@@ -35,10 +35,10 @@ export function Timer() {
     }, 1000);
   }
   useEffect(() => {
-    if (!isOpen) {
+    if (!isOpenModal) {
       getTime();
     }
-  }, [isOpen]);
+  }, [isOpenModal]);
   return (
     <>
       {!time.status ? (
