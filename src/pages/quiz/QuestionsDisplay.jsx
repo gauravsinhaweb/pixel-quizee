@@ -1,12 +1,18 @@
-import React from "react";
-import { useDataContext } from "../../context";
+import React, { useState } from "react";
 
 export const QuestionsDisplay = (props) => {
-  const { checkedAnswer, setCheckedAnswer } = useDataContext();
-  const { question, alphaKey, options, questionCount } = props;
+  const [checkedAnswer, setCheckedAnswer] = useState(false);
+  const [styleCorrectAnswer, setStyleCorrectAnswer] = useState(false);
+
+  const { question, alphaKey, options, questionCount, correct_answer } = props;
 
   const getCheckedAnswer = (option) => {
-    // will do this work till next PR
+    if (option === correct_answer) {
+      setCheckedAnswer(true);
+    } else if (option !== correct_answer) {
+      setCheckedAnswer(false);
+    }
+    setStyleCorrectAnswer(correct_answer);
   };
   return (
     <>
@@ -26,23 +32,30 @@ export const QuestionsDisplay = (props) => {
               options.map((option, ind) => {
                 return (
                   <div
-                    onClick={() => getCheckedAnswer(option)}
                     key={ind}
                     className="bg-sky-600 w-1/3 flex rounded h-20 "
                   >
                     <span className="text-white flex justify-center items-center w-20 m-1 text-xl rounded">
                       <p>{alphaKey[ind]}</p>
                     </span>
-                    <button className="text-white flex p-4 items-center w-72 bg-sky-100 hover:bg-white focus:bg-gray-400 active:bg-sky-400   capitalize text-gray-800 m-1 text-lg rounded font-bold">
-                      <p>
-                        {" "}
-                        {option
-                          .replace(/&quot;/g, '"')
-                          .replace(/&#039;/g, "'")
-                          .replace(/&amp;/g, "&")
-                          .replace(/&lt;/g, "<")
-                          .replace(/&gt;/g, ">")}
-                      </p>
+                    <button
+                      onClick={() => getCheckedAnswer(option)}
+                      // disabled={styleCorrectAnswer}
+                      className={`text-white flex p-4 items-center w-72 bg-sky-100 hover:bg-white ${
+                        checkedAnswer
+                          ? "focus:bg-green-400 "
+                          : "focus:bg-red-400"
+                      } active:bg-sky-600 capitalize ${
+                        option === styleCorrectAnswer ? "bg-green-500" : ""
+                      } text-gray-800 m-1 text-lg rounded font-bold`}
+                    >
+                      {" "}
+                      {option
+                        .replace(/&quot;/g, '"')
+                        .replace(/&#039;/g, "'")
+                        .replace(/&amp;/g, "&")
+                        .replace(/&lt;/g, "<")
+                        .replace(/&gt;/g, ">")}
                     </button>
                   </div>
                 );

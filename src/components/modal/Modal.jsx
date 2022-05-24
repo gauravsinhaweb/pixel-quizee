@@ -3,14 +3,14 @@ import { useDataContext } from "../../context";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 export const Modal = (props) => {
-  const { IsOpen, setIsOpen } = props;
+  const { isOpenModal, setIsOpenModal } = props;
   const { dataState } = useDataContext();
   const [checked, setChecked] = useState(false);
 
   const rules = dataState.rules;
 
   const startHandler = (e) => {
-    setIsOpen(false);
+    setIsOpenModal(false);
   };
   return (
     <>

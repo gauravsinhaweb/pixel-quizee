@@ -41,6 +41,7 @@ export const QuizDisplay = (props) => {
                       alphaKey={alphaKey}
                       options={options}
                       questionCount={questionCount}
+                      correct_answer={correct_answer}
                     />
                   );
                 }

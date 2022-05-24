@@ -6,7 +6,7 @@ const DataContext = createContext();
 const DataProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [questionCount, setQuestionCount] = useState(1);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpenModal, setIsOpenModal] = useState(true);
   const [checkedAnswer, setCheckedAnswer] = useState([]);
 
   const [dataState, dataDispatch] = useReducer(dataReducer, {
@@ -20,8 +20,8 @@ const DataProvider = ({ children }) => {
     dataDispatch,
     loading,
     setLoading,
-    isOpen,
-    setIsOpen,
+    isOpenModal,
+    setIsOpenModal,
     checkedAnswer,
     setCheckedAnswer,
     questionCount,

@@ -5,8 +5,13 @@ import { useDataContext } from "../../context";
 import { QuizDisplay } from "./QuizDisplay";
 
 export const Quiz = () => {
-  const { dataState, isOpen, setIsOpen, questionCount, setQuestionCount } =
-    useDataContext();
+  const {
+    dataState,
+    isOpenModal,
+    setIsOpenModal,
+    questionCount,
+    setQuestionCount,
+  } = useDataContext();
   const navigation = useNavigate();
   const questions = dataState.questions.slice(
     Number(questionCount - 1),
@@ -53,7 +58,9 @@ export const Quiz = () => {
         questionIncrement={questionIncrement}
         submitHandler={submitHandler}
       />
-      {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} />}
+      {isOpenModal && (
+        <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} />
+      )}
     </>
   );
 };
