@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Modal } from "../../components/modal/Modal";
 import { useDataContext } from "../../context";
@@ -12,6 +12,7 @@ export const Quiz = () => {
     questionCount,
     setQuestionCount,
   } = useDataContext();
+
   const navigation = useNavigate();
   const questions = dataState.questions.slice(
     Number(questionCount - 1),
@@ -47,7 +48,7 @@ export const Quiz = () => {
     }
   }, []);
   const submitHandler = () => {
-    // will do this work till next PR
+    navigation("/score");
   };
   return (
     <>

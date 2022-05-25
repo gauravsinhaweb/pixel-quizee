@@ -1,8 +1,7 @@
 import React from "react";
-import { shuffle, Timer } from "../../utils/util-index";
+import { GrNext, GrPrevious, BiTimer } from "../../services/icons";
+import { Timer } from "../../utils/util-index";
 import { QuestionsDisplay } from "./QuestionsDisplay";
-import { BiTimer } from "react-icons/bi";
-import { GrNext, GrPrevious } from "react-icons/gr";
 
 export const QuizDisplay = (props) => {
   const {
@@ -31,9 +30,7 @@ export const QuizDisplay = (props) => {
           <div className="flex h-full px-12 py-4 w-full">
             {questions &&
               questions.map(
-                ({ question, correct_answer, incorrect_answers, alphaKey }) => {
-                  const options = incorrect_answers.concat(correct_answer);
-                  shuffle(options);
+                ({ question, correct_answer, alphaKey, options }) => {
                   return (
                     <QuestionsDisplay
                       key={question}

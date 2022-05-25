@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useDataContext } from "../../context";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { HiOutlineArrowNarrowRight } from "../../services/icons";
 
 export const Modal = (props) => {
-  const { isOpenModal, setIsOpenModal } = props;
+  const { setIsOpenModal } = props;
   const { dataState } = useDataContext();
   const [checked, setChecked] = useState(false);
 
