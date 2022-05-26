@@ -13,6 +13,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "11",
     image: "/assets/category_img/film.jpg",
@@ -28,6 +29,7 @@ export const categories = [
           "Which retired American football quarterback played himself in &#039;Ace Ventura: Pet Detective&#039; and &#039;Little Nicky&#039;?",
         correct_answer: "Dan Marino",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Dan Marino", "Joe Montana", "Tom Brady", "Barry Sanders"],
         incorrect_answers: ["John Elway", "Tom Brady", "Joe Montana"],
       },
       {
@@ -38,6 +40,7 @@ export const categories = [
           "Who starred in the film 1973 movie &quot;Enter The Dragon&quot;?",
         correct_answer: "Bruce Lee",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Jackie Chan", "Bruce Lee", "Jet Li", " Yun-Fat Chow"],
         incorrect_answers: ["Jackie Chan", "Jet Li", " Yun-Fat Chow"],
       },
       {
@@ -48,6 +51,12 @@ export const categories = [
           "Who voices the main character Blu in the 2011 animated film &quot;Rio&quot;?",
         correct_answer: "Jesse Eisenberg",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Michael Cera",
+          "Jonah Hill",
+          "Jesse Eisenberg",
+          "Zach Galifianakis",
+        ],
         incorrect_answers: ["Michael Cera", "Jonah Hill", "Zach Galifianakis"],
       },
       {
@@ -58,6 +67,12 @@ export const categories = [
           "Darth Vader&#039;s famous reveal to Luke is iconic. But which of these is the right one?",
         correct_answer: "&quot;No. I am your father.&quot;",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "&quot;Luke, I am your father.&quot;",
+          "&quot;You&#039;re wrong. I am your father.&quot;",
+          "&quot;The truth is that I am your father.&quot;",
+          "&quot;No. I am your father.&quot;",
+        ],
         incorrect_answers: [
           "&quot;Luke, I am your father.&quot;",
           "&quot;You&#039;re wrong. I am your father.&quot;",
@@ -72,6 +87,12 @@ export const categories = [
           "When does &quot;Rogue One: A Star Wars Story&quot; take place chronologically in the series?",
         correct_answer: "Between Episode 3 and 4",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "After Episode 6",
+          "Before Episode 1",
+          "Between Episode 3 and 4",
+          "Between Episode 4 and 5",
+        ],
         incorrect_answers: [
           "After Episode 6",
           "Before Episode 1",
@@ -86,6 +107,7 @@ export const categories = [
           "In the movie &quot;Blade Runner&quot;, what is the term used for human-like androids ?",
         correct_answer: "Replicants",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Cylons", "Replicants", "Synthetics", "Skinjobs"],
         incorrect_answers: ["Cylons", "Synthetics", "Skinjobs"],
       },
       {
@@ -95,6 +117,7 @@ export const categories = [
         question: "In Finding Nemo, what was the name of Nemo&#039;s mom?",
         correct_answer: "Coral",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Sandy", "Pearl", "Coral", "Shelly"],
         incorrect_answers: ["Sandy", "Pearl", "Shelly"],
       },
       {
@@ -105,6 +128,7 @@ export const categories = [
           "What is the name of the fictional retro-mod band starring Austin Powers as the lead vocalist?",
         correct_answer: "Ming Tea",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Cough Fi", "Spear Mint", "Mister E", "Ming Tea"],
         incorrect_answers: ["Cough Fi", "Spear Mint", "Mister E"],
       },
       {
@@ -114,6 +138,12 @@ export const categories = [
         question: "Who directed the Kill Bill movies?",
         correct_answer: "Quentin Tarantino",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Quentin Tarantino",
+          "Arnold Schwarzenegger",
+          "David Lean",
+          "Stanley Kubrick",
+        ],
         incorrect_answers: [
           "Arnold Schwarzenegger",
           "David Lean",
@@ -128,6 +158,7 @@ export const categories = [
           "After India, which country produces the second most movies per year?",
         correct_answer: "Nigeria",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["United States", "Nigeria", "China", "France"],
         incorrect_answers: ["United States", "China", "France"],
       },
     ],
@@ -140,6 +171,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "9",
     image: "/assets/category_img/book.jpg",
@@ -155,6 +187,12 @@ export const categories = [
           "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
         correct_answer: "Richard Branson",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Alan Sugar",
+          "Donald Trump",
+          "Bill Gates",
+          "Richard Branson",
+        ],
         incorrect_answers: ["Alan Sugar", "Donald Trump", "Bill Gates"],
       },
       {
@@ -164,6 +202,7 @@ export const categories = [
         question: "Red Vines is a brand of what type of candy?",
         correct_answer: "Licorice",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Lollipop", "Licorice", "Chocolate", "Bubblegum"],
         incorrect_answers: ["Lollipop", "Chocolate", "Bubblegum"],
       },
       {
@@ -173,6 +212,7 @@ export const categories = [
         question: "What alcoholic drink is mainly made from juniper berries?",
         correct_answer: "Gin",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Gin", "Vodka", "Rum", "Tequila"],
         incorrect_answers: ["Vodka", "Rum", "Tequila"],
       },
       {
@@ -182,6 +222,12 @@ export const categories = [
         question: "Who is the founder of &quot;The Lego Group&quot;?",
         correct_answer: "Ole Kirk Christiansen",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          " Jens Niels Christiansen",
+          "Kirstine Christiansen",
+          " Gerhardt Kirk Christiansen",
+          "Ole Kirk Christiansen",
+        ],
         incorrect_answers: [
           " Jens Niels Christiansen",
           "Kirstine Christiansen",
@@ -195,6 +241,7 @@ export const categories = [
         question: "What is the last letter of the Greek alphabet?",
         correct_answer: "Omega",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Mu", "Omega", "Epsilon", "Kappa"],
         incorrect_answers: ["Mu", "Epsilon", "Kappa"],
       },
       {
@@ -204,6 +251,7 @@ export const categories = [
         question: "What company developed the vocaloid Hatsune Miku?",
         correct_answer: "Crypton Future Media",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Crypton Future Media", "Sega", "Sony", "Yamaha Corporation"],
         incorrect_answers: ["Sega", "Sony", "Yamaha Corporation"],
       },
       {
@@ -214,6 +262,7 @@ export const categories = [
           "Which of the following is the IATA code for Manchester Airport?",
         correct_answer: "MAN",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["EGLL", "LHR", "EGCC", "MAN"],
         incorrect_answers: ["EGLL", "LHR", "EGCC"],
       },
       {
@@ -223,6 +272,7 @@ export const categories = [
         question: "Which country has the most Trappist breweries?",
         correct_answer: "Belgium",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Netherlands", "France", "USA", "Belgium"],
         incorrect_answers: ["Netherlands", "France", "USA"],
       },
       {
@@ -232,8 +282,15 @@ export const categories = [
         question: "What is the full title of the Prime Minister of the UK?",
         correct_answer: "First Lord of the Treasury",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Duke of Cambridge",
+          "First Lord of the Treasury",
+          "Her Majesty&#039;s Loyal Opposition",
+          "Manager of the Crown Estate",
+        ],
         incorrect_answers: [
           "Duke of Cambridge",
+
           "Her Majesty&#039;s Loyal Opposition",
           "Manager of the Crown Estate",
         ],
@@ -245,6 +302,7 @@ export const categories = [
         question: "What is the profession of Elon Musk&#039;s mom, Maye Musk?",
         correct_answer: "Model",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Professor", "Model", "Biologist", "Musician"],
         incorrect_answers: ["Professor", "Biologist", "Musician"],
       },
     ],
@@ -257,6 +315,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "23",
     image: "/assets/category_img/history.jpg",
@@ -271,6 +330,12 @@ export const categories = [
         question: "Who was the first explorer to sail to North America?",
         correct_answer: "Leif Erikson",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Leif Erikson",
+          "Christopher Columbus",
+          "Amerigo Vespucci",
+          "Ferdinand Magellan",
+        ],
         incorrect_answers: [
           "Christopher Columbus",
           "Amerigo Vespucci",
@@ -284,8 +349,14 @@ export const categories = [
         question: "On what day did Germany invade Poland?",
         correct_answer: "September 1, 1939",
         alphaKey: ["A", "B", "C", "D"],
-        incorrect_answers: [
+        options: [
+          "September 1, 1939",
+          "June 22, 1941",
+          "July 7, 1937",
           "December 7, 1941",
+        ],
+        incorrect_answers: [
+          "December 7, 1841",
           "June 22, 1941",
           "July 7, 1937",
         ],
@@ -298,6 +369,7 @@ export const categories = [
           "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
         correct_answer: "Chile",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Peru", "Chile", "Brazil", "Argentina"],
         incorrect_answers: ["Peru", "Brazil", "Argentina"],
       },
       {
@@ -307,6 +379,7 @@ export const categories = [
         question: "How many times was Albert Einstein married in his lifetime?",
         correct_answer: "Twice",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Five", "Thrice", "Twice", "Once"],
         incorrect_answers: ["Five", "Thrice", "Once"],
       },
       {
@@ -317,6 +390,12 @@ export const categories = [
           "Who invented the &quot;Flying Shuttle&quot; in 1738; one of the key developments in the industrialization of weaving?",
         correct_answer: "John Kay",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "James Hargreaves",
+          "Richard Arkwright",
+          "John Kay",
+          "John Deere",
+        ],
         incorrect_answers: [
           "James Hargreaves",
           "Richard Arkwright",
@@ -331,6 +410,12 @@ export const categories = [
           "When Christopher Columbus sailed to America, what was the first region he arrived in?",
         correct_answer: "The Bahamas Archipelago",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "The Bahamas Archipelago",
+          "Florida",
+          "Isthmus of Panama",
+          "Nicaragua",
+        ],
         incorrect_answers: ["Florida", "Isthmus of Panama", "Nicaragua"],
       },
       {
@@ -340,6 +425,7 @@ export const categories = [
         question: "How long did World War II last?",
         correct_answer: "6 years",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["4 years", "5 years", "6 years", "7 years"],
         incorrect_answers: ["4 years", "5 years", "7 years"],
       },
       {
@@ -350,8 +436,15 @@ export const categories = [
           "In World War I, what was the name of the alliance of Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria?",
         correct_answer: "The Central Powers",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "The Axis Powers",
+          "The Central Powers",
+          "The Federation of Empires",
+          "Authoritarian Alliance",
+        ],
         incorrect_answers: [
           "The Axis Powers",
+
           "The Federation of Empires",
           "Authoritarian Alliance",
         ],
@@ -364,6 +457,12 @@ export const categories = [
           "On which aircraft carrier did the Doolitte Raid launch from on April 18, 1942 during World War II?",
         correct_answer: "USS Hornet",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "USS Enterprise",
+          "USS Lexington",
+          "USS Saratoga",
+          "USS Hornet",
+        ],
         incorrect_answers: ["USS Enterprise", "USS Lexington", "USS Saratoga"],
       },
       {
@@ -373,6 +472,12 @@ export const categories = [
         question: "Which U.S. President was in office when the Gulf War began?",
         correct_answer: "George H. W. Bush",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Richard Nixon",
+          "George W. Bush ",
+          "George H. W. Bush",
+          "Ronald Regan",
+        ],
         incorrect_answers: ["Richard Nixon", "George W. Bush ", "Ronald Regan"],
       },
     ],
@@ -386,6 +491,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "15",
     image: "/assets/category_img/games.jpg",
@@ -400,6 +506,12 @@ export const categories = [
         question: "When was the Sega Genesis released in Japan?",
         correct_answer: "October 29, 1988",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "August 14, 1989",
+          "November 30, 1990",
+          "September 1, 1986",
+          "October 29, 1988",
+        ],
         incorrect_answers: [
           "August 14, 1989",
           "November 30, 1990",
@@ -413,6 +525,12 @@ export const categories = [
         question: "Who&#039;s the creator of Geometry Dash?",
         correct_answer: "Robert Topala",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Scott Cawthon",
+          "Adam Engels",
+          "Robert Topala",
+          "Andrew Spinks",
+        ],
         incorrect_answers: ["Scott Cawthon", "Adam Engels", "Andrew Spinks"],
       },
       {
@@ -423,6 +541,7 @@ export const categories = [
           "In the game Half-Life, which enemy is showcased as the final boss?",
         correct_answer: "The Nihilanth",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["The Nihilanth", "Dr. Wallace Breen", "G-Man", "The Gonarch"],
         incorrect_answers: ["Dr. Wallace Breen", "G-Man", "The Gonarch"],
       },
       {
@@ -433,6 +552,7 @@ export const categories = [
           "In the original &quot;Super Mario Bros.&quot;, what is the acceleration of Mario if he was in free fall?",
         correct_answer: "91.28 m/s^2",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["110  m/s^2", "9.42  m/s^2", "4.4  m/s^2", "91.28 m/s^2"],
         incorrect_answers: ["110  m/s^2", "9.42  m/s^2", "4.4  m/s^2"],
       },
       {
@@ -443,6 +563,7 @@ export const categories = [
           "How long are all the cutscenes from Metal Gear Solid 4 (PS3, 2008) combined?",
         correct_answer: "8 hours",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["4 hours", "8 hours", "12 hours", "5 hours"],
         incorrect_answers: ["4 hours", "12 hours", "5 hours"],
       },
       {
@@ -453,6 +574,7 @@ export const categories = [
           "In PROTOTYPE 2, which of the following abilities/weapons is NOT obtained by an Evolved?",
         correct_answer: "Tendrils",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Blade", "Tendrils", "Bio-Bomb", "Pack Leader"],
         incorrect_answers: ["Blade", "Bio-Bomb", "Pack Leader"],
       },
       {
@@ -463,6 +585,12 @@ export const categories = [
           "In the game &quot;Persona 4&quot;, what is the canonical name of the protagonist?",
         correct_answer: "Yu Narukami",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Chino Mashido",
+          "Tunki Sunada",
+          "Yu Narukami",
+          "Masaki Narinaka",
+        ],
         incorrect_answers: ["Chino Mashido", "Tunki Sunada", "Masaki Narinaka"],
       },
       {
@@ -473,6 +601,7 @@ export const categories = [
           "What household item make the characters of &quot;Steins; Gate&quot; travel through time?",
         correct_answer: "Microwave",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Computer", "Refrigerator", "Televison", "Microwave"],
         incorrect_answers: ["Computer", "Refrigerator", "Televison"],
       },
       {
@@ -483,6 +612,7 @@ export const categories = [
           "In &quot;Call Of Duty: Zombies&quot;, what is the name of the machine that upgrades weapons?",
         correct_answer: "Pack-A-Punch",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Pack-A-Punch", "Wunderfizz", "Gersch Device", "Mule Kick"],
         incorrect_answers: ["Wunderfizz", "Gersch Device", "Mule Kick"],
       },
       {
@@ -493,8 +623,15 @@ export const categories = [
           "Which of these games takes place in the Irish town of Doolin, with the option to play as one of the characters, Ellen and Keats?",
         correct_answer: "Folklore",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Folklore",
+          "Shadow of the Colossus",
+          "ICO",
+          "Beyond Good &amp; Evil",
+        ],
         incorrect_answers: [
           "Shadow of the Colossus",
+
           "ICO",
           "Beyond Good &amp; Evil",
         ],
@@ -509,6 +646,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "10",
     image: "/assets/category_img/book.jpg",
@@ -523,6 +661,12 @@ export const categories = [
         question: "Who wrote the novel &quot;Moby-Dick&quot;?",
         correct_answer: "Herman Melville",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Herman Melville",
+          "William Golding",
+          "William Shakespeare",
+          "J. R. R. Tolkien",
+        ],
         incorrect_answers: [
           "William Golding",
           "William Shakespeare",
@@ -537,6 +681,12 @@ export const categories = [
           "What was the name of Captain Nemo&#039;s submarine in &quot;20,000 Leagues Under the Sea&quot;?",
         correct_answer: "The Nautilus",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "The Neptune",
+          "The Nautilus",
+          "The Poseidon  ",
+          "The Atlantis",
+        ],
         incorrect_answers: ["The Neptune", "The Poseidon  ", "The Atlantis"],
       },
       {
@@ -547,6 +697,7 @@ export const categories = [
           "Who wrote the 1967 horror novel &quot;Rosemary&#039;s Baby&quot;?",
         correct_answer: "Ira Levin",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Stephen King", "Robert Bloch", "Ira Levin", "Mary Shelley"],
         incorrect_answers: ["Stephen King", "Robert Bloch", "Mary Shelley"],
       },
       {
@@ -557,6 +708,12 @@ export const categories = [
           "Which famous spy novelist wrote the childrens&#039; story &quot;Chitty-Chitty-Bang-Bang&quot;?",
         correct_answer: "Ian Fleming",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Joseph Conrad",
+          "Ian Fleming",
+          "John Buchan",
+          "Graham Greene",
+        ],
         incorrect_answers: ["Joseph Conrad", "John Buchan", "Graham Greene"],
       },
       {
@@ -567,6 +724,12 @@ export const categories = [
           "In the &quot;Harry Potter&quot; series, what is Headmaster Dumbledore&#039;s full name?",
         correct_answer: "Albus Percival Wulfric Brian Dumbledore",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Albus Valum Jetta Mobius Dumbledore",
+          "Albus Percival Wulfric Brian Dumbledore",
+          "Albus James Lunae Otto Dumbledore",
+          "Albus Valencium Horatio Kul Dumbledore",
+        ],
         incorrect_answers: [
           "Albus Valum Jetta Mobius Dumbledore",
           "Albus James Lunae Otto Dumbledore",
@@ -580,6 +743,7 @@ export const categories = [
         question: "How many Harry Potter books are there?",
         correct_answer: "7",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["8", "5", "6", "7"],
         incorrect_answers: ["8", "5", "6"],
       },
       {
@@ -590,6 +754,12 @@ export const categories = [
           "What is the title of the first Sherlock Holmes book by Arthur Conan Doyle?",
         correct_answer: "A Study in Scarlet",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "The Sign of the Four",
+          "A Case of Identity",
+          "A Study in Scarlet",
+          "The Doings of Raffles Haw",
+        ],
         incorrect_answers: [
           "The Sign of the Four",
           "A Case of Identity",
@@ -604,6 +774,12 @@ export const categories = [
           "What is the make and model of the tour vehicles in &quot;Jurassic Park&quot; (1990)?",
         correct_answer: "1989 Toyota Land Cruiser",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "1989 Toyota Land Cruiser",
+          "1989 Jeep Wrangler YJ Sahar",
+          "1989 Ford Explorer XLT",
+          "Mercedes M-Class",
+        ],
         incorrect_answers: [
           "1989 Jeep Wrangler YJ Sahar",
           "1989 Ford Explorer XLT",
@@ -618,6 +794,12 @@ export const categories = [
           "Which novel by John Grisham was conceived on a road trip to Florida while thinking about stolen books with his wife?",
         correct_answer: "Camino Island",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Rogue Lawyer",
+          "Gray Mountain",
+          "Camino Island",
+          "The Litigators",
+        ],
         incorrect_answers: ["Rogue Lawyer", "Gray Mountain", "The Litigators"],
       },
       {
@@ -628,6 +810,12 @@ export const categories = [
           "Who is the author of the series &quot;Malazan Book of the Fallen&quot;?",
         correct_answer: "Steven Erikson",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Steven Erikson",
+          "Ian Cameron Esslemont",
+          "George R. R. Martin",
+          "J. R. R. Tolkien",
+        ],
         incorrect_answers: [
           "Ian Cameron Esslemont",
           "George R. R. Martin",
@@ -644,6 +832,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "17",
     image: "/assets/category_img/science.jpg",
@@ -658,6 +847,7 @@ export const categories = [
         question: "Igneous rocks are formed by excessive heat and pressure.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["true", "false"],
         incorrect_answers: ["True"],
       },
       {
@@ -667,6 +857,7 @@ export const categories = [
         question: "What is the colour of unoxidized blood?",
         correct_answer: "Red",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Blue", "Purple", "Green", "Red"],
         incorrect_answers: ["Blue", "Purple", "Green"],
       },
       {
@@ -676,6 +867,12 @@ export const categories = [
         question: "Which is the chemical name of H2O?",
         correct_answer: "Dihydrogen Monoxide",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Dihydrogen Monoxide",
+          "Ammonium chloride",
+          "Anhydrous Sodium Carbonate",
+          "Manganese dioxide",
+        ],
         incorrect_answers: [
           "Ammonium chloride",
           "Anhydrous Sodium Carbonate",
@@ -689,6 +886,7 @@ export const categories = [
         question: "How many planets make up our Solar System?",
         correct_answer: "8",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["7", "8", "9", "6"],
         incorrect_answers: ["7", "9", "6"],
       },
       {
@@ -699,6 +897,7 @@ export const categories = [
           "What does the yellow diamond on the NFPA 704 fire diamond represent?",
         correct_answer: "Reactivity",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Health", "Flammability", "Reactivity", "Radioactivity"],
         incorrect_answers: ["Health", "Flammability", "Radioactivity"],
       },
       {
@@ -708,6 +907,7 @@ export const categories = [
         question: "What is the standard atomic weight of a Plutonium nucleus?",
         correct_answer: "244",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["94", "244", "481", "128"],
         incorrect_answers: ["94", "481", "128"],
       },
       {
@@ -717,6 +917,12 @@ export const categories = [
         question: "How much radiation does a banana emit?",
         correct_answer: "0.1 Microsievert",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "0.1 Microsievert",
+          "0.3 Microsievert",
+          "0.5 Microsievert",
+          "0.7 Microsievert",
+        ],
         incorrect_answers: [
           "0.3 Microsievert",
           "0.5 Microsievert",
@@ -730,6 +936,7 @@ export const categories = [
         question: "What is the unit of electrical capacitance?",
         correct_answer: "Farad",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Gauss", "Farad", "Henry", "Watt"],
         incorrect_answers: ["Gauss", "Henry", "Watt"],
       },
       {
@@ -740,6 +947,12 @@ export const categories = [
           "Which desert is the only desert in the world where the &quot;Saguaro&quot; cactus grows indigenously?",
         correct_answer: "The Sonoran Desert",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "The Gobi Desert",
+          "The Yuma Desert",
+          "The Arabian Desert",
+          "The Sonoran Desert",
+        ],
         incorrect_answers: [
           "The Gobi Desert",
           "The Yuma Desert",
@@ -753,6 +966,7 @@ export const categories = [
         question: "How many protons are in an oxygen atom?",
         correct_answer: "Eight",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Four", "Two", "Six", "eight"],
         incorrect_answers: ["Four", "Two", "Six"],
       },
     ],
@@ -765,6 +979,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "20",
     image: "/assets/category_img/mythology.jpg",
@@ -780,6 +995,7 @@ export const categories = [
           "The ancient Roman god of war was commonly known as which of the following?",
         correct_answer: "Mars",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Jupiter", "Juno", "Ares", "Mars"],
         incorrect_answers: ["Jupiter", "Juno", "Ares"],
       },
       {
@@ -787,8 +1003,9 @@ export const categories = [
         type: "boolean",
         difficulty: "easy",
         question: "In Norse mythology, Thor once dressed as a woman.",
-        correct_answer: "True",
+        correct_answer: "true",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["true", "false"],
         incorrect_answers: ["False"],
       },
       {
@@ -798,6 +1015,7 @@ export const categories = [
         question: "Who was the King of Gods in Ancient Greek mythology?",
         correct_answer: "Zeus",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Zeus", "Poseidon", "Hera", "Hades"],
         incorrect_answers: ["Apollo", "Hermes", "Poseidon"],
       },
       {
@@ -807,6 +1025,7 @@ export const categories = [
         question: "According to Greek Mythology, Zeus can control lightning.",
         correct_answer: "True",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["true", "false"],
         incorrect_answers: ["False"],
       },
       {
@@ -816,6 +1035,7 @@ export const categories = [
         question: "The greek god Poseidon was the god of what?",
         correct_answer: "The Sea",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["War", "Sun", "Fire", "The Sea"],
         incorrect_answers: ["War", "Sun", "Fire"],
       },
       {
@@ -826,6 +1046,7 @@ export const categories = [
           "Which figure from Greek mythology traveled to the underworld to return his wife Eurydice to the land of the living?",
         correct_answer: "Orpheus",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Orpheus", "Hercules", "Perseus", "Daedalus"],
         incorrect_answers: ["Hercules", "Perseus", "Daedalus"],
       },
       {
@@ -835,6 +1056,7 @@ export const categories = [
         question: "In most traditions, who was the wife of Zeus?",
         correct_answer: "Hera",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Hera", "Aphrodite", "Athena", "Hestia"],
         incorrect_answers: ["Aphrodite", "Athena", "Hestia"],
       },
       {
@@ -844,6 +1066,7 @@ export const categories = [
         question: "According to Greek Mythology, Atlas was an Olympian God.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["true", "false"],
         incorrect_answers: ["True"],
       },
       {
@@ -854,6 +1077,7 @@ export const categories = [
           "Which of these mythological creatures is said to be half-man and half-horse?",
         correct_answer: "Centaur",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Minotaur", "Centaur", "Pegasus", "Gorgon"],
         incorrect_answers: ["Minotaur", "Pegasus", "Gorgon"],
       },
       {
@@ -863,6 +1087,12 @@ export const categories = [
         question: "What mythology did the god &quot;Apollo&quot; come from?",
         correct_answer: "Greek and Roman",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Roman and Spanish",
+          "Greek and Roman",
+          "Greek and Chinese",
+          "Greek, Roman and Norse",
+        ],
         incorrect_answers: [
           "Roman and Spanish",
           "Greek and Chinese",
@@ -879,6 +1109,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "27",
     image: "/assets/category_img/wildlife.jpg",
@@ -893,8 +1124,15 @@ export const categories = [
         question: "What is the fastest  land animal?",
         correct_answer: "Cheetah",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Lion",
+          "Cheetah",
+          "Thomson&rsquo;s Gazelle",
+          "Pronghorn Antelope",
+        ],
         incorrect_answers: [
           "Lion",
+
           "Thomson&rsquo;s Gazelle",
           "Pronghorn Antelope",
         ],
@@ -907,6 +1145,7 @@ export const categories = [
           "Kangaroos keep food in their pouches next to their children.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["False", "True"],
         incorrect_answers: ["True"],
       },
       {
@@ -916,6 +1155,7 @@ export const categories = [
         question: "How many legs do butterflies have?",
         correct_answer: "6",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["2", "4", "6", "0"],
         incorrect_answers: ["2", "4", "0"],
       },
       {
@@ -925,6 +1165,7 @@ export const categories = [
         question: "What do you call a baby bat?",
         correct_answer: "Pup",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Pup", "Cub", "Chick", "Kid"],
         incorrect_answers: ["Cub", "Chick", "Kid"],
       },
       {
@@ -935,6 +1176,7 @@ export const categories = [
           "In 2016, the IUCN reclassified the status of Giant Pandas from endangered to vulnerable.",
         correct_answer: "True",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["True", "False"],
         incorrect_answers: ["False"],
       },
       {
@@ -944,6 +1186,7 @@ export const categories = [
         question: "Rabbits are rodents.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["True", "False"],
         incorrect_answers: ["True"],
       },
       {
@@ -953,6 +1196,7 @@ export const categories = [
         question: "What is the collective noun for a group of crows?",
         correct_answer: "Murder",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Pack", "Murder", "Gaggle", "Herd"],
         incorrect_answers: ["Pack", "Gaggle", "Herd"],
       },
       {
@@ -962,7 +1206,8 @@ export const categories = [
         question: "What colour is the female blackbird?",
         correct_answer: "Brown",
         alphaKey: ["A", "B", "C", "D"],
-        incorrect_answers: ["Black", "White", "Yellow"],
+        options: ["Black", "White", "Yellow"],
+        incorrect_answers: ["Black", "Brown", "White", "Yellow"],
       },
       {
         category: "Animals",
@@ -971,6 +1216,7 @@ export const categories = [
         question: "Rabbits are carnivores.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["False", "True"],
         incorrect_answers: ["True"],
       },
       {
@@ -980,10 +1226,12 @@ export const categories = [
         question: "The internet browser Firefox is named after the Red Panda.",
         correct_answer: "True",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["False", "True"],
         incorrect_answers: ["False"],
       },
     ],
     alphaKey: ["A", "B", "C", "D"],
+    options: [],
   },
   {
     id: uuid(),
@@ -993,6 +1241,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "31",
     image: "/assets/category_img/anime.jpg",
@@ -1007,6 +1256,7 @@ export const categories = [
         question: "In the 9th Pokemon movie, who is the Prince of the Sea?",
         correct_answer: "Manaphy",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Manaphy", "Ash", "May", "Phantom"],
         incorrect_answers: ["Ash", "May", "Phantom"],
       },
       {
@@ -1017,6 +1267,7 @@ export const categories = [
           "The anime &quot;Lucky Star&quot; follows the story of one girl who is unaware she is God.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["true", "false"],
         incorrect_answers: ["True"],
       },
       {
@@ -1026,6 +1277,7 @@ export const categories = [
         question: "No Game No Life first aired in 2014.",
         correct_answer: "True",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["true", "false"],
         incorrect_answers: ["False"],
       },
       {
@@ -1035,6 +1287,7 @@ export const categories = [
         question: "In the anime Noragami who is one of the main protagonists?",
         correct_answer: "Yukine",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Karuha", "Yukine", "Mineha", "Mayu"],
         incorrect_answers: ["Karuha", "Mineha", "Mayu"],
       },
       {
@@ -1045,6 +1298,12 @@ export const categories = [
           "In the anime Black Butler, who is betrothed to be married to Ciel Phantomhive?",
         correct_answer: "Elizabeth Midford",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Rachel Phantomhive",
+          "Elizabeth Midford",
+          "Alexis Leon Midford",
+          "Angelina Dalles",
+        ],
         incorrect_answers: [
           "Rachel Phantomhive",
           "Alexis Leon Midford",
@@ -1059,6 +1318,7 @@ export const categories = [
           "In &quot;The Melancholy of Haruhi Suzumiya&quot; series, the SOS Brigade club leader is unknowingly treated as a(n) __ by her peers.",
         correct_answer: "God",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Alien", "Time Traveler", "God", "Esper"],
         incorrect_answers: ["Alien", "Time Traveler", "Esper"],
       },
       {
@@ -1069,6 +1329,7 @@ export const categories = [
           "In &quot;To Love-Ru&quot;, Ren and Run are from what planet?",
         correct_answer: "Memorze",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Deviluke", "Mistletoe", "Okiwana", "Memorze"],
         incorrect_answers: ["Deviluke", "Mistletoe", "Okiwana"],
       },
       {
@@ -1078,6 +1339,12 @@ export const categories = [
         question: "Who is the armored titan in &quot;Attack On Titan&quot;?",
         correct_answer: "Reiner Braun",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Reiner Braun",
+          "Armin Arlelt",
+          "Mikasa Ackermann",
+          "Eren Jaeger",
+        ],
         incorrect_answers: ["Armin Arlelt", "Mikasa Ackermann", "Eren Jaeger"],
       },
       {
@@ -1088,6 +1355,7 @@ export const categories = [
           "In the &quot;To Love-Ru&quot; series, Golden Darkness is sent to kill Lala Deviluke.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["False", "True"],
         incorrect_answers: ["True"],
       },
       {
@@ -1098,6 +1366,12 @@ export const categories = [
           "What name is the main character Chihiro given in the 2001 movie &quot;Spirited Away&quot;?",
         correct_answer: "Sen (Thousand)",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Hyaku (Hundred)",
+          "Ichiman (Ten thousand)",
+          "Juu (Ten)",
+          "Sen (Thousand)",
+        ],
         incorrect_answers: [
           "Hyaku (Hundred)",
           "Ichiman (Ten thousand)",
@@ -1114,6 +1388,7 @@ export const categories = [
       "There will be no negative marking.",
       "you are allotted a time of 15 min to complete the quiz.",
       "To be successful with the quiz, it is important to be conversant with all the topics. The quiz is designed to help you understand the concepts of the topics. All the best!",
+      "Press SPACEBAR or ARROW KEY to navigate through the questions.",
     ],
     categoryNumber: "24",
     image: "/assets/category_img/politics.jpg",
@@ -1129,6 +1404,7 @@ export const categories = [
           "Whose 2016 presidential campaign slogan was &quot;Make America Great Again&quot;?",
         correct_answer: "Donald Trump",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["Donald Trump", "Ted Cruz", "Marco Rubio", "Bernie Sanders"],
         incorrect_answers: ["Ted Cruz", "Marco Rubio", "Bernie Sanders"],
       },
       {
@@ -1139,6 +1415,7 @@ export const categories = [
           "There was a satirical candidate named &quot;Deez Nuts&quot; running in the 2016 US presidential elections.",
         correct_answer: "True",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["False", "True"],
         incorrect_answers: ["False"],
       },
       {
@@ -1148,6 +1425,7 @@ export const categories = [
         question: "In 2016, the United Kingdom voted to stay in the EU.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["True", "False"],
         incorrect_answers: ["True"],
       },
       {
@@ -1157,6 +1435,7 @@ export const categories = [
         question: "How many people are in the U.S. House of Representatives?",
         correct_answer: "435",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["260", "435", "415", "50"],
         incorrect_answers: ["260", "415", "50"],
       },
       {
@@ -1166,6 +1445,7 @@ export const categories = [
         question: "Denmark has a monarch.",
         correct_answer: "True",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["True", "False"],
         incorrect_answers: ["False"],
       },
       {
@@ -1176,6 +1456,7 @@ export const categories = [
           "According to the United States Constitution, how old must a person be to be elected President of the United States?",
         correct_answer: "35",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["30", "40", "45", "35"],
         incorrect_answers: ["30", "40", "45"],
       },
       {
@@ -1185,6 +1466,12 @@ export const categories = [
         question: "Who was the 45th President of the United States?",
         correct_answer: "Donald Trump",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Barack Obama",
+          "Donald Trump",
+          "Bill Clinton",
+          "George Bush",
+        ],
         incorrect_answers: ["Barack Obama", "Bill Clinton", "George Bush"],
       },
       {
@@ -1195,6 +1482,7 @@ export const categories = [
           "Donald Trump won the popular vote in the 2016 United States presidential election.",
         correct_answer: "False",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["True", "False"],
         incorrect_answers: ["True"],
       },
       {
@@ -1205,6 +1493,7 @@ export const categories = [
           "Former president Theodore Roosevelt (1900-1908)  ran for another term under the Progressive Party in 1912.",
         correct_answer: "True",
         alphaKey: ["A", "B", "C", "D"],
+        options: ["False", "True"],
         incorrect_answers: ["False"],
       },
       {
@@ -1215,9 +1504,16 @@ export const categories = [
           "Which former US president was nicknamed &quot;Teddy&quot; after he refused to shoot a defenseless black bear?",
         correct_answer: "Theodore Roosevelt",
         alphaKey: ["A", "B", "C", "D"],
+        options: [
+          "Woodrow Wilson",
+          "James F. Fielder",
+          "Theodore Roosevelt",
+          "Andrew Jackson",
+        ],
         incorrect_answers: [
           "Woodrow Wilson",
           "James F. Fielder",
+
           "Andrew Jackson",
         ],
       },

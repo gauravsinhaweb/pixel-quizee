@@ -8,6 +8,7 @@ const DataProvider = ({ children }) => {
   const [questionCount, setQuestionCount] = useState(1);
   const [isOpenModal, setIsOpenModal] = useState(true);
   const [checkedAnswer, setCheckedAnswer] = useState([]);
+  const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
 
   const [dataState, dataDispatch] = useReducer(dataReducer, {
     categories: [],
@@ -26,6 +27,8 @@ const DataProvider = ({ children }) => {
     setCheckedAnswer,
     questionCount,
     setQuestionCount,
+    correctAnswerCount,
+    setCorrectAnswerCount,
   };
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
 };

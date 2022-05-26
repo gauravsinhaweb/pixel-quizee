@@ -1,19 +1,23 @@
 import React, { useState } from "react";
+import { useDataContext } from "../../context";
 
 export const QuestionsDisplay = (props) => {
+  const { correctAnswerCount, setCorrectAnswerCount } = useDataContext();
   const [checkedAnswer, setCheckedAnswer] = useState(false);
   const [styleCorrectAnswer, setStyleCorrectAnswer] = useState(false);
 
   const { question, alphaKey, options, questionCount, correct_answer } = props;
 
   const getCheckedAnswer = (option) => {
-    if (option === correct_answer) {
+    if (option.toLowerCase() === correct_answer.toLowerCase()) {
       setCheckedAnswer(true);
+      setCorrectAnswerCount(correctAnswerCount + 5);
     } else if (option !== correct_answer) {
       setCheckedAnswer(false);
     }
     setStyleCorrectAnswer(correct_answer);
   };
+
   return (
     <>
       <div className="h-full w-full">
@@ -40,16 +44,14 @@ export const QuestionsDisplay = (props) => {
                     </span>
                     <button
                       onClick={() => getCheckedAnswer(option)}
-                      // disabled={styleCorrectAnswer}
                       className={`text-white flex p-4 items-center w-72 bg-sky-100 hover:bg-white ${
                         checkedAnswer
-                          ? "focus:bg-green-400 "
+                          ? "focus:bg-green-500 "
                           : "focus:bg-red-400"
                       } active:bg-sky-600 capitalize ${
                         option === styleCorrectAnswer ? "bg-green-500" : ""
                       } text-gray-800 m-1 text-lg rounded font-bold`}
                     >
-                      {" "}
                       {option
                         .replace(/&quot;/g, '"')
                         .replace(/&#039;/g, "'")
