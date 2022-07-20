@@ -1,14 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaUserCircle,
   GiHamburgerMenu,
-  HiLightBulb,
-  HiOutlineLightBulb,
   HiOutlineLogout,
 } from "../../services/icons";
-import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+  const userLogin = localStorage.getItem("token");
+
+  const logoutHandler = () => {
+    localStorage.removeItem("token");
+    toast("you are logged out!");
+    navigate("/");
+  };
   return (
     <>
       <nav className="w-screen flex flex-row items-center p-1 justify-between bg-transparent shadow-xs">
@@ -28,37 +33,24 @@ export const Navbar = () => {
           <GiHamburgerMenu />
         </div>
         <div className="flex flex-row mr-8 hidden md:flex">
-          <div
-            title="Explore"
-            className="text-yellow-300 text-3xl hover:text-white text-2xl text-center px-2 py-2 m-2  cursor-pointer"
-          >
-            <Link to="/">
-              <HiLightBulb />
-            </Link>
-          </div>
-          <div
-            title="Explore"
-            className="text-white text-3xl hover:text-white text-2xl text-center px-2 py-2 m-2  cursor-pointer"
-          >
-            <Link to="/">
-              <HiOutlineLightBulb />
-            </Link>
-          </div>
-
-          <div
-            title="History"
-            className="text-gray-300 hover:text-white text-2xl text-center pl-12 mr-4 py-2 m-2  cursor-pointer"
-          >
-            <Link to="/login">
-              <FaUserCircle />
-            </Link>
-          </div>
-          <div
-            title="History"
-            className="text-gray-300 hover:text-white text-2xl text-center pl-12 mr-4 py-2 m-2  cursor-pointer"
-          >
-            <HiOutlineLogout />
-          </div>
+          {!userLogin ? (
+            <div
+              title="login"
+              className="text-gray-300 hover:text-white text-2xl text-center pl-12 mr-4 py-2 m-2  cursor-pointer"
+            >
+              <Link to="/login">
+                <FaUserCircle />
+              </Link>
+            </div>
+          ) : (
+            <div
+              onClick={logoutHandler}
+              title="logout"
+              className="text-gray-300 hover:text-white text-2xl text-center pl-12 mr-4 py-2 m-2  cursor-pointer"
+            >
+              <HiOutlineLogout />
+            </div>
+          )}
         </div>
       </nav>
     </>

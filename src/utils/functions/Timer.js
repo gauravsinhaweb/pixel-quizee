@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useDataContext } from "../../context";
 
 export function Timer() {
   const { isOpenModal } = useDataContext();
+  const navigate = useNavigate();
   const [time, setTime] = useState({
     minute: 14,
     second: 59,
@@ -31,6 +33,7 @@ export function Timer() {
       if (distance < 0) {
         clearInterval(timeInterval);
         setTime({ ...time, status: "Timeout" });
+        navigate("/score");
       }
     }, 1000);
   }

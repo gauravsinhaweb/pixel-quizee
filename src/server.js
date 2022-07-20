@@ -1,13 +1,16 @@
-import { Model, RestSerializer, Server } from "miragejs";
+import { Server, Model, RestSerializer } from "miragejs";
 import {
   loginHandler,
   signupHandler,
 } from "./backend/controllers/AuthController";
+
 import {
   getAllCategoriesHandler,
   getCategoryHandler,
 } from "./backend/controllers/CategoryController";
+
 import { categories } from "./backend/db/categories";
+import { users } from "./backend/db/users";
 
 export function makeServer({ environment = "development" } = {}) {
   return new Server({
@@ -15,15 +18,22 @@ export function makeServer({ environment = "development" } = {}) {
       application: RestSerializer,
     },
     environment,
-    // TODO: Use Relationships to have named relational Data
     models: {
+      product: Model,
       category: Model,
       user: Model,
+      cart: Model,
+      wishlist: Model,
     },
 
     // Runs on the start of the server
     seeds(server) {
+      // disballing console logs from Mirage
       server.logging = false;
+
+      users.forEach((item) =>
+        server.create("user", { ...item, cart: [], wishlist: [] })
+      );
 
       categories.forEach((item) => server.create("category", { ...item }));
     },

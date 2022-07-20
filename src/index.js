@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { DataProvider } from "./context";
+import { AuthProvider } from "./context/auth-context";
 import "./index.css";
 import { makeServer } from "./server";
 
@@ -10,9 +11,11 @@ makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
-    <DataProvider>
-      <App />
-    </DataProvider>
+    <AuthProvider>
+      <DataProvider>
+        <App />
+      </DataProvider>
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
